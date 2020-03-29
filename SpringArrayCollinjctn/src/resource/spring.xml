@@ -1,0 +1,60 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+		"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+<bean id="e" class="beans.Engine">
+<property name="model" value="honda"/>
+<property name="year" value="2010"/>
+</bean>
+<bean id="e1" class="beans.Engine">
+<property name="model" value="skoda"/>
+<property name="year" value="2010"/>
+</bean>
+<bean id="e2" class="beans.Engine">
+<property name="model" value="volkswagen"/>
+<property name="year" value="2010"/>
+</bean>
+
+<bean id="mt" class="beans.ModelTest">
+<property name="cars">
+<list>
+<value>Audi</value>
+<value>BMW</value>
+<value>Merc</value>
+</list>
+</property>
+
+<property name="engines">
+<list>
+<ref bean="e"/>
+<ref bean="e1"/>
+<ref bean="e2"/>
+</list>
+</property>
+
+<property name="vegetables">
+<list>
+<value>Cauliflower</value>
+<value>Potato</value>
+</list>
+</property>
+
+<property name="values">
+<set>
+<value>123</value>
+<value>123</value>
+<value>456</value>
+<value>123</value>
+</set>
+</property>
+
+<property name="keyvalue">
+<map>
+<entry key="name" value="karan"/>
+<entry key="lastname" value="garg"/>
+<entry key="age" value="25"/>
+</map>
+</property>
+</bean>
+</beans>
+

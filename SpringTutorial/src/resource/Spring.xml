@@ -1,0 +1,19 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+		"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+			
+
+<beans>
+ <bean  id="t" class="springPackage.Test">
+<property name="name" value="Karan"/>
+<property name="lastname" value="garg"/>
+<property name="age" value="12"/>
+<property name="gender" value="male"/> 
+<property name="ib" ref="ib"/>
+</bean>
+
+<!-- <constructor-arg value="karan"/> -->
+<!-- <constructor-arg value="garg"/> -->
+<!-- <constructor-arg value="28"/> -->
+<!-- <constructor-arg value="male"/> -->
+ 
+</beans>
